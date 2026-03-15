@@ -1,6 +1,13 @@
 import streamlit as st
 import pandas as pd
-from db_connection import get_connection
+
+from python_project_01.db_connection import get_connection
+
+#from python_project_01.db_connection import get_connection
+
+#from python_project_01.db_connection import get_connection
+df = pd.read_csv("flight.csv")
+#from db_connection import get_connection
 
 st.title("🔍 Flight Search")
 

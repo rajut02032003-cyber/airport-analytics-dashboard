@@ -36,7 +36,13 @@ st.page_link("pages/route_leaderboard.py", label="🏆 Route Leaderboard")'''
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from db_connection import get_connection
+
+from python_project_01.db_connection import get_connection
+flight_df = pd.read_csv("flight.csv")
+airport_df = pd.read_csv("airport.csv")
+delay_df = pd.read_csv("airport_delay.csv")
+
+'''from db_connection import get_connection'''
 
 st.set_page_config(page_title="Airport Analytics Dashboard", layout="wide")
 

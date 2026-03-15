@@ -1,7 +1,13 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from db_connection import get_connection
+df = pd.read_csv("airport_delay.csv")
+
+from python_project_01.db_connection import get_connection
+
+from python_project_01.db_connection import get_connection
+df = pd.read_csv("flight.csv")
+#from db_connection import get_connection
 
 st.title("🏆 Route Leaderboard")
 
